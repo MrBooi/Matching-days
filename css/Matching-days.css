@@ -1,0 +1,29 @@
+
+h1{
+  text-align: center;
+}
+
+.wrapper{
+  padding-left: 240px;
+  margin-right: auto;
+
+}
+
+
+.box{
+display: inline-block;
+ padding: 10px;
+
+ border: 1px solid grey;
+}
+
+.green{
+background-color:  green;
+}
+.orange{
+background-color: orange;
+}
+
+.blue{
+background-color: blue;
+}
