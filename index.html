@@ -8,6 +8,17 @@
   <link rel="stylesheet" href="css/Matching-days.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 
+
+  <script type="text/x-template" class="MatchingDayTemplate">
+      {{#each weekdays}}
+      <div class ="box
+        {{#if first}}
+          {{first}}
+        {{else if second}}
+            {{second}}
+        {{/if}} " id="{{@key}}">{{dayName}}</div>
+      {{/each}}
+  </script>
 </head>
 
 <body>
@@ -15,13 +26,13 @@
     <h1>Matching Days</h1>
   </header>
     <div class="wrapper">
-     <div class="box" >Sunday</div>
+     <!-- <div class="box" >Sunday</div>
      <div class="box" >Monday</div>
      <div class="box" >Tuesday</div>
     <div class="box" >Wednesday</div>
      <div class="box">Thursday</div>
      <div class="box">Friday</div>
-     <div class="box">Saturday</div>
+     <div class="box">Saturday</div> -->
      </div>
      <label for="">First date: </label><input id="First_date" class="first"  type="date" />
 
