@@ -22,6 +22,9 @@ function MatchingDay() {
       return dateTwo;
     }
 
+
+    
+
     function sameDay(date1, date2) {
       var pos = new Date(date1).getDay();
       var poss = new Date(date2).getDay();
