@@ -1,10 +1,19 @@
 
+body{
+
+  background-color: silver
+}
+
 h1{
   text-align: center;
+  border-bottom: 2px solid salmon;
 }
 
 .wrapper{
-  padding-left: 240px;
+  margin-top: 20px ;
+  margin-bottom: 30px ;
+  padding-left: 2em;
+  padding-right: 2em;
   margin-right: auto;
 
 }
@@ -12,7 +21,7 @@ h1{
 
 .box{
 display: inline-block;
- padding: 10px;
+ padding: 8px;
 
  border: 1px solid grey;
 }

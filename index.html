@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Matching Days</title>
+  <link rel="stylesheet" href="css/simple-grid.css">
   <link rel="stylesheet" href="css/Matching-days.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-
 
   <script type="text/x-template" class="MatchingDayTemplate">
       {{#each weekdays}}
@@ -16,6 +16,8 @@
           {{first}}
         {{else if second}}
             {{second}}
+            {{else if sameDay}}
+                {{sameDay}}
         {{/if}} " id="{{@key}}">{{dayName}}</div>
       {{/each}}
   </script>
@@ -23,21 +25,24 @@
 
 <body>
   <header>
-    <h1>Matching Days</h1>
+    <div class="container">
+    <div class="row">
+      <div class="col-12">
+          <h1>Matching Days</h1>
+      </div>
+    </div>
+  </div>
   </header>
     <div class="wrapper">
-     <!-- <div class="box" >Sunday</div>
-     <div class="box" >Monday</div>
-     <div class="box" >Tuesday</div>
-    <div class="box" >Wednesday</div>
-     <div class="box">Thursday</div>
-     <div class="box">Friday</div>
-     <div class="box">Saturday</div> -->
+
      </div>
+
      <label for="">First date: </label><input id="First_date" class="first"  type="date" />
 
      <label for="">Second date: </label><input id="Second_date" class="second"  type="date"/>
 
+
+     <footer>Ayabonga Booi</footer>
     <script src="./js/Matching-days.js"></script>
   <script src="./js/Matching-days-DOM.js"></script>
 </body>
