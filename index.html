@@ -11,13 +11,10 @@
   <script type="text/x-template" class="MatchingDayTemplate">
       {{#each weekdays}}
       <div class ="box
-        {{#if first}}
           {{first}}
-        {{else if second}}
-            {{second}}
-            {{else if sameDay}}
-                {{sameDay}}
-        {{/if}} " id="{{@key}}">{{dayName}}</div>
+          {{second}}
+          {{sameDay}}
+       " id="{{@key}}">{{dayName}}</div>
       {{/each}}
   </script>
 </head>

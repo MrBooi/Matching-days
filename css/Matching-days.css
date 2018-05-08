@@ -38,7 +38,6 @@ margin-right: auto;
 
 .Second_Date {
   display: block;
-
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   margin-left: 2rem
@@ -73,13 +72,16 @@ margin-right: auto;
 
 .green{
 background-color:  green;
+color: white;
 }
 .orange{
 background-color: orange;
+color: white;
 }
 
 .blue{
 background-color: blue;
+color: white;
 }
 
 footer{

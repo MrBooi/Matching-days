@@ -6,34 +6,21 @@ var MatchingTemplate = Handlebars.compile(templateSource);
 var MatchingDayElem = document.querySelector('.wrapper');
 
 window.addEventListener('load', function() {
-   var dateData = {}
-  for (let i = 0; i < matchingDays.getWeekDays.length; i++) {
-    let current = matchingDays.getWeekDays[i];
-    dateData[current] = {
-      dayId: matchingDays.getWeekDays[i],
-      dayName: matchingDays.getWeekDays[i]
-    }
-  }
-  var dateDataHTML = MatchingTemplate({weekdays:dateData});
-  MatchingDayElem.innerHTML = dateDataHTML;
+  MatchingDayElem.innerHTML = MatchingTemplate({
+    weekdays: matchingDays.weekdays()
+    });
 });
-
 
 var matchingDays = MatchingDay();
-First_date.addEventListener("change", function() {
 
-let store= matchingDays.weekdays(First_date.value,Second_date.value);
-  MatchingDayElem.innerHTML = MatchingTemplate({weekdays:store});
+First_date.addEventListener("change", function() {
+  MatchingDayElem.innerHTML = MatchingTemplate({
+    weekdays:matchingDays.weekdays(First_date.value,Second_date.value)
+  });
 });
 
-
 Second_date.addEventListener("change", function() {
-
-  let store= matchingDays.weekdays(First_date.value,Second_date.value);
-
-    console.log({weekdays:store});
-
- console.log(matchingDays.sameDays(First_date.value,Second_date.value));
-
-    MatchingDayElem.innerHTML = MatchingTemplate({weekdays:store});
+  MatchingDayElem.innerHTML = MatchingTemplate({
+    weekdays:matchingDays.weekdays(First_date.value,Second_date.value)
+  });
 });
