@@ -74,9 +74,6 @@ function MatchingDay() {
                        }, weekdays[currentPos]);
                   }
         }
-
-
-
 }
   return weekdays;
     }

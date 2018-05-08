@@ -11,19 +11,64 @@ h1{
 
 .wrapper{
   margin-top: 20px ;
-  margin-bottom: 30px ;
-  padding-left: 2em;
-  padding-right: 2em;
-  margin-right: auto;
+  margin-left: 2rem;
 
 }
 
 
 .box{
-display: inline-block;
+display: block;
+ width: 200px;
  padding: 8px;
-
+margin-top: 1rem;
+margin-bottom: 1rem;
+margin-left: auto;
+margin-right: auto;
  border: 1px solid grey;
+}
+
+.First_Date {
+  display: block;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+
+
+.Second_Date {
+  display: block;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  margin-left: 2rem
+
+}
+
+#First_date  {
+  display: block;
+  width: 80%;
+  padding: 8px 8px;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  font-size: 14px;
+  color: blue;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+
+#Second_date  {
+  display: block;
+  width: 80%;
+  padding: 8px 8px;
+  margin-left: 2rem;
+  border: none;
+  font-size: 14px;
+  color: blue;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
 }
 
 .green{
@@ -35,4 +80,30 @@ background-color: orange;
 
 .blue{
 background-color: blue;
+}
+
+footer{
+   margin-top: 1rem;
+  color: white;
+}
+
+
+@media  (min-width:720px){
+
+  .wrapper{
+    margin-left: 3rem;
+
+  }
+  .box{
+  display: inline-block;
+   width: 80px;
+   padding: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+   border: 1px solid grey;
+  }
+
 }

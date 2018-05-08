@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
   MatchingDayElem.innerHTML = dateDataHTML;
 });
 
-//  of a  factory Function
+
 var matchingDays = MatchingDay();
 First_date.addEventListener("change", function() {
   console.log(First_date.value)
