@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
 
 var matchingDays = MatchingDay();
 First_date.addEventListener("change", function() {
-  console.log(First_date.value)
+
 let store= matchingDays.weekdays(First_date.value,Second_date.value);
   MatchingDayElem.innerHTML = MatchingTemplate({weekdays:store});
 });
